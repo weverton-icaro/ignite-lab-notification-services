@@ -4,7 +4,5 @@ import { HttpModule } from './infra/http/http.module';
 
 @Module({
   imports: [HttpModule, DatabaseModule],
-  controllers: [],
-  providers: [],
 })
 export class AppModule {}

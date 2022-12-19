@@ -11,11 +11,6 @@ import { PrismaNotificationsRepository } from './prisma/repositories/prisma-noti
       useClass: PrismaNotificationsRepository,
     },
   ],
-  exports: [
-    {
-      provide: NotificationsRepository,
-      useClass: PrismaNotificationsRepository,
-    },
-  ],
+  exports: [ NotificationsRepository ],
 })
 export class DatabaseModule {}
